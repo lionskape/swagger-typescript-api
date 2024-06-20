@@ -1,7 +1,7 @@
-const fs = require("node:fs");
-const { resolve } = require("node:path");
-const _ = require("lodash");
-const { Logger } = require("./logger");
+import fs from "node:fs";
+import { resolve } from "node:path";
+import _ from "lodash";
+import { Logger } from "./logger.js";
 
 const FILE_PREFIX = `/* eslint-disable */
 /* tslint:disable */
@@ -90,6 +90,4 @@ class FileSystem {
   };
 }
 
-module.exports = {
-  FileSystem,
-};
+export { FileSystem };

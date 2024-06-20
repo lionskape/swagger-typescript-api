@@ -18,7 +18,6 @@ describe("basic", async () => {
   });
 
   test("nullable-3.0 refs", async () => {
-    // @ts-expect-error
     await generateApi({
       name: "schema",
       input: path.resolve(__dirname, "schema.json"),

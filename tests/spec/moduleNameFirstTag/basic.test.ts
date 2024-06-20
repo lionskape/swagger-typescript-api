@@ -18,7 +18,6 @@ describe("basic", async () => {
   });
 
   test("--module-name-first-tag", async () => {
-    // @ts-expect-error
     await generateApi({
       name: "schema",
       input: path.resolve(__dirname, "schema.json"),

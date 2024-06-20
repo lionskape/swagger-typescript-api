@@ -1,7 +1,7 @@
-const { resolve } = require("node:path");
-const _ = require("lodash");
-const Eta = require("eta");
-const path = require("node:path");
+import { resolve } from "node:path";
+import path from "node:path";
+import * as Eta from "eta";
+import _ from "lodash";
 
 class TemplatesWorker {
   /**
@@ -238,6 +238,4 @@ class TemplatesWorker {
   };
 }
 
-module.exports = {
-  TemplatesWorker,
-};
+export { TemplatesWorker };

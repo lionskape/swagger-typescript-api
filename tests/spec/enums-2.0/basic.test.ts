@@ -18,7 +18,6 @@ describe("basic", async () => {
   });
 
   test("enums-2.0", async () => {
-    // @ts-expect-error
     await generateApi({
       name: "schema",
       input: path.resolve(__dirname, "schema.json"),

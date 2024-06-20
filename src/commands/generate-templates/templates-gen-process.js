@@ -1,7 +1,7 @@
-const { TemplatesGenConfig } = require("./configuration");
-const { FileSystem } = require("../../util/file-system");
-const { Logger } = require("../../util/logger");
-const path = require("node:path");
+import path from "node:path";
+import { FileSystem } from "../../util/file-system.js";
+import { Logger } from "../../util/logger.js";
+import { TemplatesGenConfig } from "./configuration.js";
 
 class TemplatesGenProcess {
   /**
@@ -199,6 +199,4 @@ class TemplatesGenProcess {
   };
 }
 
-module.exports = {
-  TemplatesGenProcess,
-};
+export { TemplatesGenProcess };

@@ -18,7 +18,6 @@ describe("basic", async () => {
   });
 
   test("--route-types", async () => {
-    // @ts-expect-error
     await generateApi({
       name: "schema",
       input: path.resolve(__dirname, "schema.json"),

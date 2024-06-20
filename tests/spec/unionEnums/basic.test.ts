@@ -18,7 +18,6 @@ describe("basic", async () => {
   });
 
   test("--union-enums", async () => {
-    // @ts-expect-error
     await generateApi({
       name: "schema",
       input: path.resolve(__dirname, "schema.json"),
